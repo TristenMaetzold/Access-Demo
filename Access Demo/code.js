@@ -17,8 +17,8 @@ function changeSlides(n) {
 
 function nextSlide() {
   slideNumber++;
-    if (slideNumber > slide.length){
-      slideNumber = 0
+    if (slideNumber >= slide.length) {
+      slideNumber = 0;
     }
     changeSlides(slideNumber);
 }
@@ -26,7 +26,7 @@ function nextSlide() {
 function prevSlide() {
   slideNumber--;
     if (slideNumber < 0) {
-      slideNumber = slide.lenght-1
+      slideNumber = slide.length-1;
     }
     changeSlides(slideNumber);
 }
