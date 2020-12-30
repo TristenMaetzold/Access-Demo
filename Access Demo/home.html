@@ -6,28 +6,47 @@
   </head>
   <body>
 
-    <div class="slide">
+    <span class="srOnly">Carousel Instructions</span>
+
+<!-- The Images for the Slides -->
+    <div class="slide show">
+      <div class="slideNumber">1/5</div>
         <img class="image-l" src="Images/reginald-1.jpg" alt="Reginald the Dog">
     </div>
-    <div class="slide">
+
+    <div class="slide hide">
+      <div class="slideNumber">2/5</div>
         <img class="image-l" src="Images/harrison-2.jpg" alt="Harrison the Dog">
     </div>
-    <div class="slide">
+
+    <div class="slide hide">
+      <div class="slideNumber">3/5</div>
         <img class="image-l" src="Images/lila-2.jpg" alt="Lila the Cat">
     </div>
-    <div class="slide">
+
+    <div class="slide hide">
+      <div class="slideNumber">4/5</div>
         <img class="image-l" src="Images/buffy-1.jpg" alt="Buffy the Cat">
     </div>
-    <div class="slide">
+
+    <div class="slide hide">
+      <div class="slideNumber">5/5</div>
         <img class="image-l" src="Images/willow-1.jpg" alt="Willow the Cat">
     </div>
 
+<!-- The forward and back buttons -->
+  <div>
+    <button class="previous" onclick="prevSlide()">Previous</button>
+    <button class="next" onClick="nextSlide(1)">Next</button>
+  </div>
+
+<!-- The bottom button/indicators -->
     <div class="slide-dots">
-      <button onCLick="changeSlides(00001)">Slide Uno</button>
-      <button onCLick="changeSlides(00002)">Slide Dos</button>
-      <button onCLick="changeSlides(00003)">Slide Quatro</button>
-      <button onCLick="changeSlides(00004)">Slide Cinco</button>
-      <button onCLick="changeSlides(00005)">Slide Cinco</button>
+      <button onCLick="changeSlides(0)">Slide Uno</button>
+      <button onCLick="changeSlides(1)">Slide Dos</button>
+      <button onCLick="changeSlides(2)">Slide Tres</button>
+      <button onCLick="changeSlides(3)">Slide Quatro</button>
+      <button onCLick="changeSlides(4)">Slide Cinco</button>
     </div>
 
   </body>
